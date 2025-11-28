@@ -5,7 +5,7 @@
 }   
 
 body {
-    background-image: url(".//image.webp");
+    background-image: url("./ChatGPT\ Image\ Nov\ 28\,\ 2025\,\ 02_46_34\ AM.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -16,7 +16,7 @@ body {
 
 .titulo-uno{
     font-size: 3em;
-    color: #a0a7a3;
+    color: #a7aeaa;
     text-align: left;
     margin-top: 100px;
     margin-bottom: 10px;
@@ -24,25 +24,63 @@ body {
 }
 
 h2 {
-    margin-top: 150px;
-    margin-bottom: 10px;
-    color: rgb(255, 255, 255);
-    margin-left: 25px;
-    font-size: 35px
+    margin-top: 50px;
+    margin-left: 50px;
+    color: rgb(203, 185, 185);
+    font-size: 35px;
 }
 
+.contenido-dos-columnas{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 18px;
+    margin-top: 28px;
+}
 
 p {
-    margin-right: 5vh;
-    margin-top: 100px;
-    margin-left: 100vh;
-    color: white; 
-    font-size: 32px;
-   
+    color: rgb(151, 96, 142);
+    font-size: 22px;
+    line-height: 1.6;
+    max-width: 600px;
 }
-.img{
-    margin-top: 100px;
-    margin-right: 20px;
-    margin-bottom: 100px;
-    margin-left: 20px;
-} 
+
+.checkbox-oculto{
+    display: none;
+}
+
+.texto-desplegable{
+    color:rgb(37, 135, 84);
+    font-size: 22px;
+    line-height: 1.6;
+    max-width: 600px;
+    max-height: 0;
+    opacity: 1;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.img:hover- .texto-desplegable{
+    opacity: 1;
+    max-height: 2000px;
+}
+
+.texto-desplegable:hover{
+    opacity: 1;
+    max-height: 2000px;
+}
+
+.img {
+    width: 300px;
+    object-fit: contain;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+
+
+
+label:hover .img{
+    transform: scale(1.05);
+    transition: transform 1.6s ease;
+}
